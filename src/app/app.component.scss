@@ -1,0 +1,43 @@
+.input_style{
+    // opacity: 0;
+    // z-index: 2000 !important;
+    // width: 143px;
+}
+.upload_button{
+    position: absolute;
+    //left: 255px;
+}
+button{
+    width: 200px;
+    height: 59px;
+    background: purple;
+}
+.margin-bottom-10{
+    padding-bottom: 20px;
+}
+.center-align{
+    text-align: center;
+}
+.spinner-class{
+    position: relative;
+    z-index: 2000 !important;
+    background: transparent;
+    width: 52%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .bg-common {
+    background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
+    font-size: 1.1rem;
+    font-family: "Quicksand", sans-serif;
+    height: 100%;
+    text-align: center;
+  }
+  .len-set{
+    padding-top: 27%;
+  }
