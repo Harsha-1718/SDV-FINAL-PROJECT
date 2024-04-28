@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { log } from 'console';
 import * as d3 from 'd3';
 @Component({
   selector: 'app-pie-chart',
@@ -13,13 +14,12 @@ export class PieChartComponent {
  private width = 750;
  private height = 600;
   data = [
-   {"Continent": "Africa", "count": "999700406794"},
-   {"Continent": "Asia", "count": "356304789172"},
-   {"Continent": "Europe", "count": "567694672011",},
-   {"Continent": "North-America", "count": "457363337501"},
-   {"Continent": "oceania", "count": "320381210816"},
-   {"Continent": "Soth-America", "count": "321666503057", },
-   {"Continent": "India", "count": "121666503057", },
+   {"Continent": "Africa", "count": "999700406794", "percentage":"39%"},
+   {"Continent": "Asia", "count": "356304789172", "percentage":"12%"},
+   {"Continent": "Europe", "count": "567694672011","percentage":"19%"},
+   {"Continent": "North-America", "count": "457363337501", "percentage":"13%"},
+   {"Continent": "oceania", "count": "320381210816", "percentage":"9%"},
+   {"Continent": "Soth-America", "count": "321666503057","percentage":"8%" }, 
  ];
  // The radius of the pie chart is half the smallest side
  private radius = Math.min(this.width, this.height) / 2 - this.margin;
@@ -95,10 +95,10 @@ export class PieChartComponent {
    .data(pie(this.data))
    .enter()
    .append('text')
-   .text((d: any)=> d.data.Continent)
+   .text((d: any)=> d.data.Continent + " - " + d.data.percentage)
    .attr("transform", (d: any) => "translate(" + labelLocation.centroid(d) + ")")
    .style("text-anchor", "middle")
    .style("font-size", 15);
  }
- 
+
 }

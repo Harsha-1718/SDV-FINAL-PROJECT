@@ -4,7 +4,9 @@
     // width: 143px;
 }
 .upload_button{
-    position: absolute;
+    // position: absolute;
+text-align: center;
+font-size: 25px;
     //left: 255px;
 }
 button{
@@ -32,12 +34,34 @@ button{
     box-sizing: border-box;
   }
   .bg-common {
+    
     background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
+    background-image: url('../assets/covi.jpg');
+    background-size: contain;
+    background: no repeat;
     font-size: 1.1rem;
+    color: white !important;
     font-family: "Quicksand", sans-serif;
     height: 100%;
     text-align: center;
   }
+  .color-red{
+    color: white !important;
+  }
   .len-set{
     padding-top: 27%;
+  }
+  .header-shadow{
+    background-image: url('../assets/download.jpg');
+}
+.red-bg {
+    background-color: red;
+    font-size: medium;
+    font-size: 25px;
+    font-family: system-ui;
+    cursor: pointer;
+  }
+  
+  .blue-text {
+    color: blue;
   }

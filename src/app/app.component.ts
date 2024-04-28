@@ -272,5 +272,8 @@ export class AppComponent {
     powerGauge.render();
 
   }
+openURL(url:any){
+  window.open(url, '_blank');
+}
 
 }

@@ -194,35 +194,40 @@
   <div class="card form-group">
     <div>
       
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
       </svg>
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-      </svg>
-      <span class="upload_button">Please UPLOAD the file here</span>
+      </svg> -->
+      <div class="upload_button">Please UPLOAD the file here</div>
+      <br>
     </div>
     
     <input type="file" class="form-control input_style" (change)="check($any($event))" placeholder="Upload file"
       accept=".xlsx">
      <br>
      <br>
-      <div *ngIf="clicked">
+     
+      <!-- <div *ngIf="clicked">
         <a class="card" target="_blank" rel="noopener"
-          href="https://vizhub.com/amarsree26/980f85eb3ff2478b9e5d2c8dd139e79a">
+          href="https://vizhub.com/Abd2899/c4b2da3e28ba438a9866805cdb7875f8">
           <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
           </svg>
-          <span>Click here for pie chart details in vizhub</span>
+          <span>Click here for Bar chart details in vizhub</span>
           <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
           </svg>
         </a>
-      </div>
+      </div> -->
       <br>
-      <div *ngIf="clicked">
+      <button class="red-bg blue-text" 
+      (click)="openURL('https://vizhub.com/Abd2899/c4b2da3e28ba438a9866805cdb7875f8')">Bar Graph</button>
+      <br>
+      <!-- <div *ngIf="clicked">
         <a class="card" target="_blank" rel="noopener"
-          href="https://vizhub.com/amarsree26/b92af69c3be04cd595fd29b0be25601d">
+          href="https://vizhub.com/Abd2899/5e0b5537a4ec4e43828d5c260fa2f7c6">
           <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
           </svg>
@@ -231,26 +236,31 @@
             <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
           </svg>
         </a>
-      </div>
+      </div> -->
       <br>
-      <div *ngIf="clicked">
+      <button class="red-bg blue-text" 
+      (click)="openURL('https://vizhub.com/Abd2899/5e0b5537a4ec4e43828d5c260fa2f7c6')">3D Graph</button>
+      <br>
+      <!-- <div *ngIf="clicked">
         <a class="card" target="_blank" rel="noopener"
-          href="https://vizhub.com/amarsree26/f3dbb37e05674d77b18915e8424cc14a">
+          href="https://vizhub.com/Abd2899/ad6cf916aad24757a3267fd221958ad9">
           <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
           </svg>
-          <span>Click here for more details in vizhub</span>
+          <span>Click here for more Visualizations in vizhub</span>
           <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
           </svg>
         </a>
-      </div>
+      </div> -->
+      <br>
+      <button class="red-bg blue-text" (click)="openURL('https://vizhub.com/Abd2899/ad6cf916aad24757a3267fd221958ad9')">Area Graph</button>
    
   </div>
   <div class="len-set">
   <div class ="vix-length" *ngIf="showguagechart">
-    <h1>Power-Gauge Visualizations</h1>
-    <h2>Visual for average percentage of people_fully_vaccinated</h2>
+    <h1 class="color-red">Power-Gauge Visualizations</h1>
+    <h2 class="color-red">Visual for average percentage of people_fully_vaccinated</h2>
    <br>
   </div>
   <div id="power-gauge"></div>
@@ -260,7 +270,7 @@
   <img class="spinner-class" src="../assets/spinner-8565_256.gif" alt="Loading..." />
 </div> 
 <div>
-  <h1>Total Covid cases among the different Continents</h1>
+  <h1 class="color-red">Total Covid cases among the different Continents</h1>
   <app-pie-chart></app-pie-chart>
 </div>
 </div>
